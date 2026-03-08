@@ -170,12 +170,12 @@ const ProductDetail = () => {
               >
                 {isAdding ? (
                   <>
-                    <span className="material-symbols-outlined text-xl animate-spin">sync</span>
-                    Processing...
+                    <span className="material-symbols-outlined text-xl animate-spin">Sync Processing...</span>
+                    
                   </>
                 ) : (
                   <>
-                    <span className="material-symbols-outlined text-xl">shopping_bag</span>
+                    <span className="material-symbols-outlined text-xl"></span>
                     Add to Cart
                   </>
                 )}
@@ -186,7 +186,7 @@ const ProductDetail = () => {
             <div className="mt-10 grid grid-cols-2 gap-6 p-5 bg-slate-50 rounded-2xl border border-slate-100">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm text-green-500">
-                  <span className="material-symbols-outlined">local_shipping</span>
+                  <span className="material-symbols-outlined"></span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[10px] font-black text-slate-900 uppercase">Shipping</span>
@@ -195,7 +195,7 @@ const ProductDetail = () => {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-sm text-green-500">
-                  <span className="material-symbols-outlined">verified_user</span>
+                  <span className="material-symbols-outlined"></span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[10px] font-black text-slate-900 uppercase">Secure</span>
