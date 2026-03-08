@@ -41,7 +41,7 @@ const AddProduct = () => {
     setIsLoading(true);
     try {
       // Gọi API gửi dữ liệu xuống Backend
-      const response = await fetch('http://localhost:5000/api/products', {
+      const response = await fetch('https://assignment-2-tlxt.onrender.com/api/products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

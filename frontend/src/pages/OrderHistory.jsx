@@ -19,7 +19,7 @@ const OrderHistory = () => {
       return;
     }
     const user = JSON.parse(userStr);
-    fetch(`http://localhost:5000/api/orders/user/${user.id}`)
+    fetch(`https://assignment-2-tlxt.onrender.com/api/orders/user/${user.id}`)
       .then(res => res.json())
       .then(data => {
         setOrders(data);
@@ -38,7 +38,7 @@ const OrderHistory = () => {
     setIsLoadingDetails(true);
 
     try {
-      const res = await fetch(`http://localhost:5000/api/orders/${order.id}/items`);
+      const res = await fetch(`https://assignment-2-tlxt.onrender.com/api/orders/${order.id}/items`);
       const data = await res.json();
       setOrderItems(data);
     } catch (error) {

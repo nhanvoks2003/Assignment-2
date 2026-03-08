@@ -15,7 +15,7 @@ const ProductDetail = () => {
   // Gọi API lấy thông tin chi tiết của 1 sản phẩm
   useEffect(() => {
     window.scrollTo(0, 0); // Tự động cuộn lên đầu trang khi vào
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`https://assignment-2-tlxt.onrender.com/api/products/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error('Không tìm thấy sản phẩm');
         return res.json();

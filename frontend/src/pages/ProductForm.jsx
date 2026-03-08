@@ -36,7 +36,7 @@ const ProductForm = () => {
       const user = JSON.parse(userString);
 
       // Gọi API thêm sản phẩm
-      const response = await fetch('http://localhost:5000/api/products', {
+      const response = await fetch('https://assignment-2-tlxt.onrender.com/api/products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

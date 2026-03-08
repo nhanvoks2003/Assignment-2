@@ -32,7 +32,7 @@ const Register = () => {
     setIsLoading(true);
     try {
       // Gửi request sang Backend
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch('https://assignment-2-tlxt.onrender.com/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

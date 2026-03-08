@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     // Gọi API lấy dữ liệu từ Backend
-    fetch('http://localhost:5000/api/products')
+    fetch('https://assignment-2-tlxt.onrender.com/api/products')
       .then(res => res.json())
       .then(data => {
         setProducts(data);
