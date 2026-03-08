@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bạn có thể đổi màu nền mặc định của app ở đây cho giống Figma */
+body {
+  background-color: #f8fafc; /* Màu xám nhạt */
+}
